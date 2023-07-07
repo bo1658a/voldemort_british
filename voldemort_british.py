@@ -17,3 +17,12 @@ def main():
     filtered_2 = trigram_filter(filter_1, trigrams_filtered)
     filtered_3 = letter_pair_filter(filter_2)
     view_by_letter(name, filter_3)
+
+def prep_words(name, word_list_ini):
+    """Prep word list for finding anagrams."""
+    print("length initial word_list = {}".format(len(word_list_ini)))
+    len_name = len(name)
+    word_list = [word.lower() for word in word_list_ini
+                 if len(word) == len_name]
+    print("length of new word_list = {}".format(len(word_list)))
+    return word_list
