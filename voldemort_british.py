@@ -118,4 +118,7 @@ def view_by_letter(name, filter_3):
         view_by_letter(name, filter_3)
     else:
         sys.exit()
-        
+
+if __name__ == '__main__':
+    main()
+    
